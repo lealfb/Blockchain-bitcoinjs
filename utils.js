@@ -15,6 +15,8 @@ function Menu(sel)
 	document.write(" | ");
 	One("Documentation", "documentation", sel=="Config"?"Documentation":sel);
 	document.write(" | ");
+	One("Donate", "donate", sel);
+	document.write(" | ");
 	One("Contact", "contact", sel);
 }
 
@@ -34,7 +36,7 @@ function DocMenu(sel)
 	document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--")
 	Two("index", "documentation", sel);
 	document.write("|");
-	Two("config file", "config", sel);
+	Two("config", "config", sel);
 	document.write("|");
 	Two("display strings", "display_strings", sel);
 	document.write("|");

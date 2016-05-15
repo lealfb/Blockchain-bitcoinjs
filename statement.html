@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>EthSlurp - Drink the Blockchain</title>
+    <script src=utils.js></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>EthSlurp</h1>
+        <h2>Drink the block chain</h2>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+
+<center>
+<table style="border:1px solid wheat;" width=60%><tr><td>
+<h1 style="display:inline">Smart Contract Statement</h1><br>
+<h2 style="display:inline">For month of May</h2><br>
+<h3 style="display:inline">For smart contract: 0x713b73c3994442b533e6a083ec968e40606810ec</h3><p>
+<table width=75% style="border:1px solid wheat" >
+<tr bgcolor=wheat>
+    <th width=20% align=center><font color=black><center>Timestamp</center></td>
+	<th width=35% align=center><font color=black><center>From</center></td>
+	<th width=20% align=center><font color=black><center>Gas</center></td>
+	<th width=25% align=center><font color=black><center>Value</center></td>
+</tr>
+<tr>
+    <td colspan=4><hr></td>
+</tr>
+<tr>
+    <td align=right>1461381888</td>
+	<td align=left>0xbdac...02da9f</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1461382383</td>
+	<td align=left>0xbdac...0da19f</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1461382383</td>
+	<td align=left>0xbda7...0da49f</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1461437052</td>
+	<td align=left>0x43f6...06a2a0</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1461437052</td>
+	<td align=left>0x43f6...9c62a0</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1461437639</td>
+	<td align=left>0x43fb...9362a0</td>
+	<td align=right>3000000</td>
+	<td align=right>0</td>
+</tr>
+<tr>
+    <td align=right>1461437639</td>
+	<td align=left>0x43f6...c962a0</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1462535415</td>
+	<td align=left>0xbdac...e4da9f</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1462535524</td>
+	<td align=left>0xbdac...a0da9f</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1462535771</td>
+	<td align=left>0xbdac...e0da9f</td>
+	<td align=right>3000000</td>
+	<td align=right>10000000000000000</td>
+</tr>
+<tr>
+    <td align=right>1462577601</td>
+	<td align=left>0x9519...8b262e</td>
+	<td align=right>123401</td>
+	<td align=right>0</td>
+</tr>
+<tr>
+    <td width=20% align=right></td>
+	<td width=35% align=left></td>
+	<td width=20% style="border-top:2px solid wheat" align=right>Total:<p></td>
+	<td width=25% style="border-top:2px solid wheat" align=right>90000000000000000<p></td>
+</tr>
+</table>
+
+<i><h6>Statement created with <a href=index.html>EthSlurp v.0.9.0</a> on 5/15/2016 10:47:04am</h6></i>
+</td></tr></table>
+</center>
+
+<h3>How was this accomplished?</h3>
+
+    <p>To build this webpage we made the following changes to the
+        <a href=config.html>config.dat file</a>, created the template
+        file (see below), and ran this command:
+
+        <pre><big> ethslurp -f:custom 0x713b73c3994442b533e6a083ec968e40606810ec </big></pre>
+
+    <p>The changes we made to the config.dat file were to add the following
+     lines under the [DISPLAY_STR] group:
+
+    <p>
+    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;[DISPLAY_STR]</h6><br>
+    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;...</h6><br>
+    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fieldList=timeStamp|from|gas|value</h6><br>
+    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fmt_custom_file=statement.template</h6><br>
+    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fmt_custom_record=fmt_html_record</h6><br>
+    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fmt_custom_field=fmt_html_field</h6>
+
+    <p>In other words, we told it the name of a template file (see below) and
+        to pick up its other display strings from the 'html' format.
+
+    <p>Notice that the 'custom' part of the command line above can take on
+        any value. For example, 'custom_1' or 'custom_2'. This would
+        allow you to call two different formats for the same smart contract.
+        For example, perhaps you want to separate incoming from outgoing
+        transacations, or separate transactions by date. Note that we
+        also customized the list of fields to include.
+
+    <p>The template file (statement.template) looked like this:
+<p><pre><big>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="stylesheets/statement.css"&gt;
+    &lt;link rel="stylesheet" href="stylesheets/github-dark.css"&gt;
+    &lt;title&gt;EthSlurp - Drink the Blockchain&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;div class="container"&gt;
+        &lt;h1&gt;EthSlurp&lt;/h1&gt;
+        &lt;h2&gt;Drink the block chain&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class="container"&gt;
+      &lt;table width=60%&gt;&lt;tr&gt;&lt;td&gt;
+        &lt;h1&gt;Smart Contract Statement&lt;/h1&gt;&lt;br&gt;
+        &lt;h2&gt;For month of <font color=orange>[{CUR_MONTH}]</font>&lt;/h2&gt;&lt;br&gt;
+        &lt;h3&gt;For smart contract: <font color=orange>[{ADDR}]</font>&lt;/h3&gt;&lt;p&gt;
+        &lt;table width=75%&gt;
+          &lt;tr&gt;<font color=orange>[{HEADER}]</font>&lt;/tr&gt;
+          <font color=orange>[{RECORDS}]</font>
+        &lt;/table&gt;
+        Statement created: <font color=orange>[{NOW}]</font>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</big></pre>
+
+<p>The orange values are special tokens replaced by EthSlurp when it runs.
+
+</body>
+</html>

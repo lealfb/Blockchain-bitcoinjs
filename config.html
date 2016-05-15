@@ -101,18 +101,18 @@
         The possibilities are almost endless. Here are the nine pre-set strings:
 
         <ul><i>Tab delimited text (.txt):</i><br />
-            <h6 style="display:inline">[DISPLAY_STR] fmt_txt_surround=[RECORDS]\n</h6><br>
-            <h6 style="display:inline">[DISPLAY_STR] fmt_txt_record=[FIELDS]\n</h6><br>
+            <h6 style="display:inline">[DISPLAY_STR] fmt_txt_file=[{HEADER}]\n[{RECORDS}]\n</h6><br>
+            <h6 style="display:inline">[DISPLAY_STR] fmt_txt_record=[{FIELDS}]\n</h6><br>
             <h6 style="display:inline">[DISPLAY_STR] fmt_txt_field=\t[{FIELD}]</h6></ul>
 
         <ul><i>Comma seperated values (.csv):</i><br />
-            <h6 style="display:inline">[DISPLAY_STR] fmt_csv_surround=[RECORDS]\n</h6><br>
-            <h6 style="display:inline">[DISPLAY_STR] fmt_csv_record=[FIELDS]\n</h6><br>
+            <h6 style="display:inline">[DISPLAY_STR] fmt_csv_file=[{HEADER}]\n[{RECORDS}]\n</h6><br>
+            <h6 style="display:inline">[DISPLAY_STR] fmt_csv_record=[{FIELDS}]\n</h6><br>
             <h6 style="display:inline">[DISPLAY_STR] fmt_csv_field=["{FIELD}"],</h6></ul>
 
         <ul><i>Hypertext Markup Language (.html):</i><br />
-            <h6 style="display:inline">[DISPLAY_STR] fmt_html_surround=&lt;table&gt;\n[RECORDS]&lt;/table&gt;\n</h6><br>
-            <h6 style="display:inline">[DISPLAY_STR] fmt_html_record=\t&lt;tr&gt;\n[FIELDS]&lt;/tr&gt;\n</h6><br>
+			<h6 style="display:inline">[DISPLAY_STR] fmt_html_file=&lt;table&gt;\n[{HEADER}]\n[{RECORDS}]&lt;/table&gt;\n</h6><br>
+            <h6 style="display:inline">[DISPLAY_STR] fmt_html_record=\t&lt;tr&gt;\n[{FIELDS}]&lt;/tr&gt;\n</h6><br>
             <h6 style="display:inline">[DISPLAY_STR] fmt_html_field=\t\t&lt;td&gt;[{FIELD}]&lt;/td&gt;\n</h6><br></ul>
 
         <p><a href=display_strings.html>Click here</a> for a complete description of this very power feature.

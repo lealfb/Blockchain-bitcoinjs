@@ -39,26 +39,28 @@
         transactions from any Ethereum address, including smart contracts.
         For example,
 
-    <pre><big> ethslurp 0xbb9bc244d798123fde783fcc1c72d3bb8c189413</big></pre>
+        <pre><big> ethslurp 0xbb9bc244d798123fde783fcc1c72d3bb8c189413</big></pre>
 
-    <p>returns all transactions, both in to and out of, "The DAO."
-        If you run the above command--don't it takes a long time--you
-        will get JSON formatted data, in other words, computer gobbeldy-gook.
+    <p>returns all transactions from "The DAO." If you run the above command (don't
+        it takes forever) you will get JSON data, i.e, computer gobbeldy-gook.
 
     <p>This is where EthSlurp comes in. Using the formatting (-f) option
-        you can make the output human readable.
+        makes the output human readable.
 
-        <pre><big> ethslurp -p 0xbb9bc244d798123fde783fcc1c72d3bb8c189413</big></pre>
+        <pre><big> ethslurp -f 0x713B73c3994442b533e6A083eC968e40606810Ec</big></pre>
 
-    <p>It's even better than that. The format of the output is fully customizable
-        using a feature called <a href=display_strings.html>display strings</a>. Choose
+    <p>It's even better than that. The formatting is fully customizable using a
+        feature called <a href=display_strings.html>display strings</a>. Choose
         which fields to include, which fields to ignore, and exactly what format
         the output takes.
 
-    <p>For example, by changing a single line in a configuration file, you can
-        create a tab delimited text file, a comma seperated .csv file that will
-        open directly in MS Excel, or an HTML web page. There are many other
-        options detailed fully in our <a href=documentation.html>documentation</a>.<p>
+    <p>For example, by adding a formatting options to the -f command, you can
+        create a tab delimited text file, a comma seperated .csv file that
+        will open directly in MS Excel, or an even rudimentary HTML.
+
+        <pre><big> ethslurp -f:txt 0x713B73c3994442b533e6A083eC968e40606810Ec<br> ethslurp -f:csv 0x713B73c3994442b533e6A083eC968e40606810Ec<br> ethslurp -f:html 0x713B73c3994442b533e6A083eC968e40606810Ec</big></pre>
+
+    <p>There are many other options detailed fully in our <a href=documentation.html>documentation</a>.<p>
 
 <h3>Why would I need to do that?</h3>
 
@@ -67,13 +69,12 @@
         need to fully account for all the incoming and outgoing ether in
         your contact. You can even filter the transactions by date. Wouldn't
         it be nice to finally know on a monthly or weekly basis if your
-        contracts are even making any money?
+        contract is making money?
 
 <h3>Yeah, but show me an example</h3>
 
-    <p>How's this: <a target=top href=statement.html>Monthly
-        Statement for XYZ Smart Contract</a>
-
+    <p>How's this:
+	<a target=_block href="statement.html">Monthly Statement for XYZ Smart Contract</a>
 
 <h3>Building the software</h3>
 

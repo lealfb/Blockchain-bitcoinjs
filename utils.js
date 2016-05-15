@@ -11,7 +11,7 @@ function Menu(sel)
 {
 	One("Home", "index", sel);
 	document.write(" | ");
-	One("Video", "video", sel);
+	One("Videos", "video", sel);
 	document.write(" | ");
 	One("Documentation", "documentation", sel=="Config"?"Documentation":sel);
 	document.write(" | ");

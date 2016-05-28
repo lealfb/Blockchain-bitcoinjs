@@ -44,7 +44,7 @@
 <h3>Usage:</h3>
 
 <pre><code><h3>
- ethslurp [-i|-e|-d|-f[:fmt]|-l|-s|-o|-b|-c|-v|-h] addr
+ ethslurp [-i|-e|-d|-f[:fmt]|-l|-m|-s|-o|-b|-c|-v|-h] addr
 
  Fetches data off the Ethereum block chain for an
  arbitrary account or smart contract. Optionally
@@ -57,8 +57,9 @@
    -d	specify date range as 'start-[end]' (yyyymmdd[:hhmmss])
    -f	pretty print, optionally add ':txt,' ':csv,' or ':html'
    -l	re-display most recent (last) slurp
+   -m	maximum number of transactions to slurp (100000)
    -s	force EthSlurp to take a slurp (ignore cached data)
-   -o	open output in an associated editor
+   -o	open the configuration file for editing
    -b	save a date stamped backup of the previous slurp
    -c	clear all previously cached slurps
    -v	verbose: -v1 for minimal debug output, -v3 for max

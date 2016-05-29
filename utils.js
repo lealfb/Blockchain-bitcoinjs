@@ -15,11 +15,11 @@ function Menu(sel)
 	document.write(" | ");
 	One("Documentation", "documentation", sel=="Config"?"Documentation":sel);
 	document.write(" | ");
-	One("Donate", "donate", sel);
+	One("Data", "data", sel);
 	document.write(" | ");
 	One("Contact", "contact", sel);
 	document.write(" | ");
-	One("Data", "data", sel);
+	One("Donate", "donate", sel);
 }
 
 function Two(text,link,sel)

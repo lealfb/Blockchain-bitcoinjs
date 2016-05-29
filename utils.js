@@ -18,6 +18,8 @@ function Menu(sel)
 	One("Donate", "donate", sel);
 	document.write(" | ");
 	One("Contact", "contact", sel);
+	document.write(" | ");
+	One("Data", "data", sel);
 }
 
 function Two(text,link,sel)

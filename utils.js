@@ -44,3 +44,8 @@ function DocMenu(sel)
 	document.write("|");
 	Two("detail", "display_strings_det", sel);
 }
+
+function oneDownload(file)
+{
+	document.write("<a href=" + file + ">" + file + "</a></li></br>");
+}

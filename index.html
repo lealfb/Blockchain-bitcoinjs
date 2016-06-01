@@ -17,7 +17,7 @@
     <header>
       <div class="container">
         <h1>EthSlurp</h1>
-        <h2>Drink the block chain</h2>
+        <h2>Drink the blockchain</h2>
 
         <section id="downloads">
           <a href="https://github.com/Great-Hill-Corporation/ethslurp/zipball/master" class="btn">Download as .zip</a>
@@ -36,40 +36,40 @@
 <h3>Welcome to EthSlurp</h3>
 
     <p>EthSlurp allows you to 'slurp' the Ethereum blockchain extracting
-        transactions from any Ethereum address, including smart contracts.
-        For example,
+        transactions from any Ethereum address, including smart contracts
+        and store those transactions easily in familiar file formats such
+        as .csv or .txt. For example,
 
         <pre><big> ethslurp 0xbb9bc244d798123fde783fcc1c72d3bb8c189413</big></pre>
 
-    <p>returns all transactions from "The DAO." If you run the above command (don't
-        it takes forever) you will get JSON data, i.e, computer gobbeldy-gook.
+    <p>returns all transactions from "The DAO." This data is available
+        in many places, but until now it wasn't easy to consume.</p>
 
-    <p>This is where EthSlurp comes in. Using the formatting (-f) option
-        makes the output human readable.
+    <p>This is where EthSlurp comes in. The formatting option makes the
+        JSON gobbeldy-gook easy to read.</p>
 
         <pre><big> ethslurp -f 0x713B73c3994442b533e6A083eC968e40606810Ec</big></pre>
 
-    <p>It's even better than that. The formatting is fully customizable using a
-        feature called <a href=display_strings.html>display strings</a>. Choose
-        which fields to include, which fields to ignore, and exactly what format
-        the output takes.
+    <p>It's even better than that. The output from EthSlurp is fully
+        customizable, allowing you to choose which data fields to export,
+        which data fields to ignore, the format of the data, and even which
+        summary fields to include, if any.</p>
 
-    <p>For example, by adding a formatting options to the -f command, you can
-        create a tab delimited text file, a comma seperated .csv file that
-        will open directly in MS Excel, or an even rudimentary HTML.
+    <p>For example, by adding an option to the -f command, you can
+        create tab delimited text file, comma seperated .csv file
+        that will open directly in MS Excel, or an even rudimentary HTML.
 
-        <pre><big> ethslurp -f:txt 0x713B73c3994442b533e6A083eC968e40606810Ec<br> ethslurp -f:csv 0x713B73c3994442b533e6A083eC968e40606810Ec<br> ethslurp -f:html 0x713B73c3994442b533e6A083eC968e40606810Ec</big></pre>
+        <pre><big> ethslurp -f:txt  0x713B73c3994442b533e6A083eC968e40606810Ec<br> ethslurp -f:csv  0x713B73c3994442b533e6A083eC968e40606810Ec<br> ethslurp -f:html 0x713B73c3994442b533e6A083eC968e40606810Ec</big></pre>
 
-    <p>There are many other options detailed fully in our <a href=documentation.html>documentation</a>.<p>
+    <p>There are many other options detailed fully in the <a href=doc_home.html>documentation</a>.<p>
 
-<h3>Why would I need to do that?</h3>
+<h3>Why would I want to slurp the blockchain?</h3>
 
-    <p>Let's say you've deployed a smart contract. How do you know what's
-        going on with it? With EthSlurp you can create the information you
-        need to fully account for all the incoming and outgoing ether in
-        your contact. You can even filter the transactions by date. Wouldn't
-        it be nice to finally know on a monthly or weekly basis if your
-        contract is making money?
+    <p>Let's say you've deployed your own smart contract. How do will you
+        know what's going on? Using EthSlurp's -date option and some simple
+        script automation, you could generate a daily report and have it
+        emailed to your inbox. Wouldn't it be nice know if your smart
+        contract is making any money?
 
 <h3>Yeah, but show me an example</h3>
 
@@ -78,30 +78,29 @@
 
 <h3>Building the software</h3>
 
-    <p>Currently (pre-beta), we do not provide binaries (mostly because we
-        don't know how). You must download the source code and compile it
-        yourself--but don't worry--it's extremely easy. Information on building
-        the software is provided on the <a href=documentation.html>documentation</a>
-        page.
+    <p>We provide full open-source code in an easily compiled version
+        (no binaries). Don't worry--it's easy to build. There are no
+        external depednancies, so there's nothing to download except
+        out code. Information on building the software is provided
+        in the <a href=doc_home.html>documentation</a>.
 
-    <p>We also do not know how to make a full-fledged package. There may be a few
-        dependencies which may not resolve during the build. Please contact us
-        if that happens, and we will respond quickly. Email us with questions:
+    <p>Contact us if you have any trouble running EthSlurp.
+        We try to respond as quickly as we can. Email us with questions:
         <a href="mailto:info@greathill.com">info@ethslurp.com</a></p>
 
 <h3>Cautions and warnings</h3>
 
-    <p>This software is pre-beta. We are constantly working to make the software
-        as robust as possible, but we're still in the early phases. Use the software
-        at your own risk. We make no representation as to its fitness for any
-        purpose. The software is provided as is, and is hereby released into
-        the public domain.</p>
+    <p>While we are constantly improving this software, trying to make it
+        as robust and easy to use as possible, it is still beta.
+        Use the software at your own risk. We make no representation
+        as to the software's fitness for any purpose. The software
+        is provided as is, and its source code is hereby released
+        into the public domain.</p>
 
 <h3>Support / contact us</h3>
 
-    <p>Having trouble? Check out our <a href="documentation.html">documentation</a>,
-        join our slack, or <a href="contact.html">contact support</a> and we’ll
-        help you sort it out.</p>
+    <p>Having trouble? Join our slack or <a href="contact.html">contact
+        support</a> and we’ll help you sort it out.</p>
 
        </section>
     </div>

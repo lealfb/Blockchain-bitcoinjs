@@ -17,14 +17,14 @@
     <header>
       <div class="container">
         <h1>EthSlurp</h1>
-        <h2>Drink the block chain</h2>
+        <h2>Drink the blockchain</h2>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
 
-<center>
+<center><pre><big>Close this tab to return to the site</big></pre><br>
 <table style="border:1px solid wheat;" width=60%><tr><td>
 <h1 style="display:inline">Smart Contract Statement</h1><br>
 <h2 style="display:inline">For month of May</h2><br>
@@ -120,7 +120,7 @@
 <h3>How was this accomplished?</h3>
 
     <p>To build this webpage we made the following changes to the
-        <a href=config.html>config.dat file</a>, created the template
+        <a href=doc_config.html>config.dat file</a>, created the template
         file (see below), and ran this command:
 
         <pre><big> ethslurp -f:custom 0x713b73c3994442b533e6a083ec968e40606810ec </big></pre>
@@ -129,12 +129,12 @@
      lines under the [DISPLAY_STR] group:
 
     <p>
-    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;[DISPLAY_STR]</h6><br>
-    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;...</h6><br>
-    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fieldList=timeStamp|from|gas|value</h6><br>
-    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fmt_custom_file=statement.template</h6><br>
-    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fmt_custom_record=fmt_html_record</h6><br>
-    <h6 style="display:inline">&nbsp;&nbsp;&nbsp;fmt_custom_field=fmt_html_field</h6>
+    <h6>&nbsp;&nbsp;&nbsp;[DISPLAY_STR]</h6><br>
+    <h6>&nbsp;&nbsp;&nbsp;...</h6><br>
+    <h6>&nbsp;&nbsp;&nbsp;fieldList=timeStamp|from|gas|value</h6><br>
+    <h6>&nbsp;&nbsp;&nbsp;fmt_custom_file=statement.template</h6><br>
+    <h6>&nbsp;&nbsp;&nbsp;fmt_custom_record=fmt_html_record</h6><br>
+    <h6>&nbsp;&nbsp;&nbsp;fmt_custom_field=fmt_html_field</h6>
 
     <p>In other words, we told it the name of a template file (see below) and
         to pick up its other display strings from the 'html' format.
@@ -158,7 +158,7 @@
     &lt;header&gt;
       &lt;div class="container"&gt;
         &lt;h1&gt;EthSlurp&lt;/h1&gt;
-        &lt;h2&gt;Drink the block chain&lt;/h2&gt;
+        &lt;h2&gt;Drink the blockchain&lt;/h2&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class="container"&gt;

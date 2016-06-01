@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>EthSlurp - Drink the Blockchain</title>
+    <script src=utils.js></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>EthSlurp</h1>
+        <h2>Drink the blockchain</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Great-Hill-Corporation/ethslurp/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/Great-Hill-Corporation/ethslurp/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/Great-Hill-Corporation/ethslurp" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+      <div class="container">
+        <script>Menu("Config");</script><br><script>DocMenu("detail");</script>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+
+Coming Soon!
+
+<!--
+<h3>Command line options (details)</h3>
+    <p>Each command line option is further defined here:</p>
+    <ul>
+        <li><h6>addr</h6>: the address of the account or contract to slurp (required)
+  -i	include income transactions only
+  -e	include expenditures only
+  -d	specify date range as '[:start:[end]]' (yyyymmdd[hhmmss])
+  -f	pretty print, optionally add ':txt,' ':csv,' or ':html'
+  -l	list previously slurped addresses in cache
+  -m	maximum number of transactions to slurp (100000)
+  -r	re-run the most recent slurp
+  -s	force EthSlurp to take a slurp (ignore cached data)
+  -o	open the configuration file for editing
+  -b	export records in block range (:0[:max])
+  -c	clear all previously cached slurps
+  -v	verbose: -v1 for minimal debug output, -v3 for max
+  -h	display this help screen
+</pre>
+<h3>Configuration file (details)</h3>
+
+<pre>
+    ethslurp.cpp:	slurper.api_key      = slurper.config.GetProfileStringGH("SETTINGS", "api_key",      EMPTY);
+    ethslurp.cpp:	slurper.api_provider = slurper.config.GetProfileStringGH("SETTINGS", "api_provider", "EtherScan");
+    ethslurp.cpp:	slurper.api_url      = slurper.config.GetProfileStringGH("SETTINGS", "api_url",      "http://etherscan.io/apis");
+    ethslurp.cpp:		slurper.config.SetProfileString("SETTINGS", "api_key",      slurper.api_key);
+    ethslurp.cpp:		slurper.config.SetProfileString("SETTINGS", "api_provider", "EtherScan");
+    ethslurp.cpp:		slurper.config.SetProfileString("SETTINGS", "api_url",      "http://etherscan.io/apis");
+    ethslurp.cpp:		slurper.opt.addr = slurper.config.GetProfileStringGH("SETTINGS", "rerun", EMPTY);
+    ethslurp.cpp:	slurper.config.SetProfileString("SETTINGS", "rerun", slurper.opt.addr);
+    ethslurp.cpp:	config.SetProfileString("SETTINGS",     "datapath",          PATH_TO_SLURPS);
+    ethslurp.cpp:	config.SetProfileString("SETTINGS",     "api_key",           EMPTY);
+    ethslurp.cpp:	config.SetProfileString("SETTINGS",     "focus",             "189");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_fieldList",     EMPTY);
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_txt_file",      "[{HEADER}]\\n[{RECORDS}]");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_txt_record",    "[{FIELDS}]\\n");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_txt_field",     "\\t[{FIELD}]");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_csv_file",      "[{HEADER}]\\n[{RECORDS}]");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_csv_record",    "[{FIELDS}]\\n");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_csv_field",     "[\"{FIELD}\"],");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_html_file",     "<table>\\n[{HEADER}]\\n[{RECORDS}]</table>\\n");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_html_record",   "\\t<tr>\\n[{FIELDS}]</tr>\\n");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_html_field",    "\\t\\t<td>[{FIELD}]</td>\\n");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_json_file",     "[{RECORDS}]\\n");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_json_record",   "\\n        {\\n[{FIELDS}]        },");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_json_field",    "\"[{p:FIELD}]\":\"[{FIELD}]\",");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_custom_file",	 "file:custom_format_file.html");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_custom_record", "fmt_html_record");
+    ethslurp.cpp:	config.SetProfileString("DISPLAY_STR",  "fmt_custom_field",	 "fmt_html_field");
+    slurper.cpp:	SFInt32 nSeconds = config.GetProfileIntGH("SETTINGS", "update_freq", 300);
+    slurper.cpp:	SFString fieldList = config.GetProfileStringGH("DISPLAY_STR", "fmt_fieldList", EMPTY);
+    slurper.cpp:				resolved = config.GetProfileStringGH("FIELD_STR", fieldName, fieldName);
+    slurper.cpp:	SFString ret = config.GetProfileStringGH("DISPLAY_STR", formatName, EMPTY);
+    slurper.cpp:		ret = config.GetProfileStringGH("DISPLAY_STR", newName, EMPTY);
+</pre>
+
+<h3>Display strings (detail)</h3>
+-->
+
+    <script>contact();</script>
+
+        </div>
+      </section>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-2416364-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

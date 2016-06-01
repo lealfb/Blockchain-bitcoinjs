@@ -4,6 +4,17 @@
 *.o
 *.obj
 
+# Mac junk
+*.xcodeproj
+.DS_Store
+ethslurp
+api_key
+movies
+data_not_published
+timeConvert
+tests/cache
+tests/files
+
 # Precompiled Headers
 *.gch
 *.pch

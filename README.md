@@ -28,67 +28,67 @@ Exemplo: Registro de transações para o contrato extraiLogBlockchain()
     </tr>
     <tr>
         <td align=right>1461381888</td>
-      	<td align=left>0xbdac...02da9f</td>
+      	<td align=left>0xbdac02da9f02da9f02da9f</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1461382383</td>
-      	<td align=left>0xbdac...0da19f</td>
+      	<td align=left>0xbdac0da19f0da19f0da19f</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1461382383</td>
-      	<td align=left>0xbda7...0da49f</td>
+      	<td align=left>0xbda70da49f0da49f0da49f</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1461437052</td>
-      	<td align=left>0x43f6...06a2a0</td>
+      	<td align=left>0x43f606a2a006a2a006a2a0</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1461437052</td>
-      	<td align=left>0x43f6...9c62a0</td>
+      	<td align=left>0x43f69c62a09c62a09c62a0</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1461437639</td>
-      	<td align=left>0x43fb...9362a0</td>
+      	<td align=left>0x43fb9362a09362a09362a0</td>
       	<td align=right>3000000</td>
       	<td align=right>0</td>
     </tr>
     <tr>
         <td align=right>1461437639</td>
-      	<td align=left>0x43f6...c962a0</td>
+      	<td align=left>0x43f6c962a0c962a0c962a0</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1462535415</td>
-      	<td align=left>0xbdac...e4da9f</td>
+      	<td align=left>0xbdace4da9fe4da9fe4da9f</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1462535524</td>
-      	<td align=left>0xbdac...a0da9f</td>
+      	<td align=left>0xbdaca0da9fa0da9fa0da9f</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1462535771</td>
-      	<td align=left>0xbdac...e0da9f</td>
+      	<td align=left>0xbdace0da9fe0da9fe0da9f</td>
       	<td align=right>3000000</td>
       	<td align=right>10000000000000000</td>
     </tr>
     <tr>
         <td align=right>1462577601</td>
-      	<td align=left>0x9519...8b262e</td>
+      	<td align=left>0x95198b262e8b262e8b262e</td>
       	<td align=right>123401</td>
       	<td align=right>0</td>
     </tr>
@@ -100,8 +100,6 @@ Exemplo: Registro de transações para o contrato extraiLogBlockchain()
     </tr>
     </table>
     
-    <i><h6>Registro criado com <a href=index.html>EthSlurp v.0.9.0</a> em 03/06/2016 02:47:04</h6></i>
-    </td></tr></table>
-    </center>
+    <h6>Registro criado com EthSlurp v.0.9.0 em 03/06/2016 02:47:04</h6>
 </html>
 

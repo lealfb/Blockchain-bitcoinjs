@@ -1,6 +1,6 @@
 # Extração de logs de transação Blockchain
 
-## Bem-vindo ao EthSlurp
+## Bem-vindo
 
 EthSlurp permite extrair transações de qualquer endereço Ethereum, incluindo contratos inteligentes e armazenar essas transações facilmente em formatos de arquivo familiares como .csv ou .txt. Por exemplo,
 

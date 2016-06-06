@@ -18,6 +18,8 @@ Saiba mais sobre o Browserify [Aqui](http://browserify.org/).
 > $ npm -g install bitcoinjs-lib browserify uglify-js
 > $ browserify -r bitcoinjs-lib -s bitcoin | uglifyjs > bitcoinjs.min.js
 ```
+Será criado o arquivo bitcoinjs.min.js que é o arquivo que deve ser incluido 
+nas páginas para a utilização da bliblioteca.
 
 ### Passo 3 - Gerando Par de Chaves
 ```
@@ -62,5 +64,10 @@ Saiba mais sobre o Browserify [Aqui](http://browserify.org/).
 A escrita da transação foi realizada manualmente através do link abaixo:
 [Gravando a transação na Blockchain](https://blockchain.info/pushtx)
 Ressalto que este passo deverá ser automatizado. 
+
+### Página de Teste
+Fiz uma página que verifica se os vários componentes foram instalados corretamente.
+É uma página simples que apenas cria uma chave privada e um endereço público.
+[Página de Teste](geraCHaves.html)
 
 

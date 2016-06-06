@@ -70,4 +70,5 @@ Fiz uma página que verifica se os vários componentes foram instalados corretam
 É uma página simples que apenas cria uma chave privada e um endereço público.
 [GeraChaves](geraChaves.html)
 
-
+### Créditos
+Fábio Leal

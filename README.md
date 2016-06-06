@@ -1,105 +1,76 @@
-# Extração de logs de transação Blockchain
+# Blockchain com Javascript
 
-## Bem-vindo
+A seguir seguir um script simples para escrever uma transação na Blockchain. Utilizou-se a biblioteca bitcore.
+Para a importar a biblioteca foi necessário realizar a instalação do NodeJS.
 
-EthSlurp permite extrair transações de qualquer endereço Ethereum, incluindo contratos inteligentes e armazenar essas transações facilmente em formatos de arquivo familiares como .csv ou .txt. Por exemplo,
+## Passo a Passo - Alô Mundo!
+Demonstrando como escrever uma mensagem no Blockchain.
+Primeiro foi necessário importar a bliblioteca "bitcore". Isto nos permitiu criar uma transação.
 
-  ethslurp 0xbb9bc244d798123fde783fcc1c72d3bb8c189413 
-  
-## Por que extrair logs de transação do blockchain?
+### Passo 1
+Importar as bibliotecas "bitcore" e "bitcore-exploradores", utilizado o comando:
 
-Vamos dizer que você já implantou seu próprio contrato inteligente. Como você vai saber o que está acontecendo? 
-Pode ser que você deseje gerar um relatório diário das transações e recebê-los por email. 
+> sudo NPM instalar bitcore@0.13.0~~number=plural && sudo NPM instalar bitcore-exploradores
 
-## Segue um exemplo:
-Exemplo: Registro de transações para o contrato extraiLogBlockchain()
+### Passo 2
+Foi criado um arquivo com o nome "blockchainTransaction.js" e importados os módulos "bitcore" e "bitcore-exploradores"
+que foram obtidos via NPM.
 
-<html>
-  <head>
-    <h1>Registros de Log Blockcain</h3>
-    <h2>Junho</h3>
-    <h3>Para o contrato inteligente: 0x713b73c3994442b533e6a083ec968e40606810ec</h3>
-    <table width=75%>
-    <tr bgcolor=wheat>
-      <th width=20% align=center><font color=black><center>Timestamp</center></td>
-    	<th width=35% align=center><font color=black><center>De</center></td>
-    	<th width=20% align=center><font color=black><center>Gas</center></td>
-    	<th width=25% align=center><font color=black><center>Valor</center></td>
-    </tr>
-    <tr>
-        <td align=right>1461381888</td>
-      	<td align=left>0xbdac02da9f02da9f02da9f</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1461382383</td>
-      	<td align=left>0xbdac0da19f0da19f0da19f</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1461382383</td>
-      	<td align=left>0xbda70da49f0da49f0da49f</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1461437052</td>
-      	<td align=left>0x43f606a2a006a2a006a2a0</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1461437052</td>
-      	<td align=left>0x43f69c62a09c62a09c62a0</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1461437639</td>
-      	<td align=left>0x43fb9362a09362a09362a0</td>
-      	<td align=right>3000000</td>
-      	<td align=right>0</td>
-    </tr>
-    <tr>
-        <td align=right>1461437639</td>
-      	<td align=left>0x43f6c962a0c962a0c962a0</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1462535415</td>
-      	<td align=left>0xbdace4da9fe4da9fe4da9f</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1462535524</td>
-      	<td align=left>0xbdaca0da9fa0da9fa0da9f</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1462535771</td>
-      	<td align=left>0xbdace0da9fe0da9fe0da9f</td>
-      	<td align=right>3000000</td>
-      	<td align=right>10000000000000000</td>
-    </tr>
-    <tr>
-        <td align=right>1462577601</td>
-      	<td align=left>0x95198b262e8b262e8b262e</td>
-      	<td align=right>123401</td>
-      	<td align=right>0</td>
-    </tr>
-    <tr>
-        <td width=20% align=right></td>
-      	<td width=35% align=left></td>
-      	<td width=20% style="border-top:2px solid wheat" align=right>Total:<p></td>
-      	<td width=25% style="border-top:2px solid wheat" align=right>90000000000000000<p></td>
-    </tr>
-    </table>
-    
-    <h6>Registro criado com EthSlurp v.0.9.0 em 03/06/2016 02:47:04</h6>
-</html>
+> var bitcore = require ( 'bitcore');
+> var exploradores = require ( 'bitcore-exploradores');
+
+Após isso, foi utilizada a função Insight().
+
+> var visão = new explorers.Insight ();
+
+### Passo 3
+Criado a carteira e enviando Bitcoin de um endereço para outro. 
+E necessário criar uma chave pública usando o hash SHA-256 da chave privada.
+Para gerar a chave privada foi necessário ir ao site rushwallet.com, através deste site foi obtido o "endereço bitcoin". 
+Este endereço foi copiado e armazenado no arquivo blockchainTransaction.js como uma variável pública.
+
+No site rushwallet foi possível "exportar a chave" e então copiá-la no arquivo blockchainTransaction.js como a variável "PrivateKey".
+
+ > var bitcore = require ( 'bitcore');
+ > var exploradores = require ( 'bitcore-exploradores');
+ > var visão = new explorers.Insight ();
+
+ > var publicAddress = '1DuFRRFEJvchWpTQiDqMk3DW3mP9XZ3UTa';
+ > var PrivateKey = '5KG7bZhGX5jaCD46cxbN1tX6nq1zSa4gAZ4baKmw277RKGbH3qc'
+ 
+ Foi definida também uma taxa de mineração, conforme abaixo:
+ 
+ > var minerFee = 667;
+ 
+ A mensagem enviada para a Blockchain foi:
+ 
+> var blockchainMessage = 'Olá Satoshi!';
+
+Abaixo um exemplo de envio de um centavo para um endereço de teste.
+
+ > var bitcore = require ( 'bitcore');
+ > var exploradores = require ( 'bitcore-exploradores');
+ > var visão = new explorers.Insight ();
+
+ > var publicAddress = '18JYiBktnAzbS2sEZSrdKgSEFwLjXvW9Uy';
+ > var PrivateKey = '5HxKWX4pkze3AiB4yWrdZKMYrf9hWYdAVp3TnkpYMiGbxnLuLWN'
+
+ > insight.getUnspentUtxos (publicAddress, função (erro, utxos) {
+ > console.log ( 'utxos' + ':' + JSON.stringify (utxos, indefinido, 2));
+ > });
+ 
+ A resposta deve ser semelhante a a esta:
+ 
+> utxos: [
+>	 {
+>	 "Endereço": "18JYiBktnAzbS2sEZSrdKgSEFwLjXvW9Uy",
+>	 "Txid": "6c2e97cd10906ad89fdd10c1f068fc20ecc709a9dcc152dab1d7a2c7118a4158",
+>	 "Vout": 1,
+>	 "ScriptPubKey": "76a914501a6c0e1e7030100a9a3cdc14b906760fc45bb388ac",
+>	 "Quantidade": 0.000042
+>	 }
+> ]  
+
+## 
+Bem-vindo
 

@@ -12,7 +12,7 @@ Após concluída a instalação do npm será necessária importar a lib bitcoinj
 ```
 
 ### Passo 2 - Browserify 
-Com o Browserify é possível escrever código que usa o require do Node da mesma forma.
+Com o Browserify é possível escrever código que usa o require do Node da mesma forma. <br/>
 Saiba mais sobre o Browserify [Aqui](http://browserify.org/).
 ```
 > $ npm -g install bitcoinjs-lib browserify uglify-js

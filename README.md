@@ -121,8 +121,8 @@ Após isso, basta executar no terminal:
 node blockchainTransaction.js
 
 ## Finalizando 
-Este passos possibilitaram a escrita da transação no Blockchain.
+Este passos possibilitaram a escrita da transação no Blockchain. <br />
 
-Disciplina: Construção de Software 
-Professor: Alexandre Gomes
-Aluno: Alan Mazuco
+Disciplina: Construção de Software <br />
+Professor: Alexandre Gomes <br />
+Aluno: Alan Mazuco 

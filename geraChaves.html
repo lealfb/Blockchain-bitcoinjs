@@ -1,0 +1,16 @@
+<html> 
+     <head> 
+         <title>Página de Teste para gerar chave pública e privada</title> 
+     </head> 
+     <body> 
+        <script src="bitcoinjs.min.js"></script>          
+		<a href="#" onclick="randomAddress()">Gera chave Privada e Pública</a> 
+        <script> 
+			function randomAddress(){ 
+				var keyPair = bitcoin.ECPair.makeRandom() 
+                console.log(keyPair.toWIF()) 
+                console.log(keyPair.getAddress()) 
+             } 
+         </script> 
+	</body> 
+</html> 

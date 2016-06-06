@@ -68,6 +68,6 @@ Ressalto que este passo deverá ser automatizado.
 ### Página de Teste
 Fiz uma página que verifica se os vários componentes foram instalados corretamente.
 É uma página simples que apenas cria uma chave privada e um endereço público.
-[Página de Teste](geraCHaves.html)
+[GeraChaves](geraChaves.html)
 
 
